@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Heroku Example</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <style>
 
      .page-wrapper {
@@ -18,15 +19,17 @@
 
      .form-wrapper {
         border: 1px solid #e7ebf3;
-        width: 400px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
      }
 
      .form-wrapper h2 {
-        font-weight: bold;
-        text-align: center;
+        font-weight: 300;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
      }
 
      .form {
@@ -66,13 +69,19 @@
         border: none;
      }
 
+     .form a {
+        margin-left: 70px;
+        margin-top: 2px;
+        font-size: small;
+        color: #02b3e4;
+     }
+
      hr {
         width: 50%;
         height: 1px;
         border: 0;
-        border-top: 1px solid #ccc;
+        border-top: 1px sorgb(48, 34, 34)#ccc;
         margin-top: -10px;
-
      }
     
     </style>
@@ -85,6 +94,7 @@
             <form class="form" action="">
                 <input type="text" placeholder="Email">
                 <input type="text" placeholder="Password">
+                <a>Forgot password?</a>
                 <button class="button">SIGN IN</button>
             </form>
         </div>
